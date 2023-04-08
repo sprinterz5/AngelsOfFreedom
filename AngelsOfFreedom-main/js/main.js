@@ -33,6 +33,7 @@ const queryString = window.location.search;
 console.log(queryString);
 const urlParams = new URLSearchParams(queryString);
 const schname = urlParams.get('schname')
+const fullname = urlParams.get('fullname')
 if(schname!=null){
 	sent();
 }
