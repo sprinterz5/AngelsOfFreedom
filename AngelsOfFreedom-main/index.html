@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+</head>
+<body>
+
+<header id="y">
+	<div class="container">
+		<nav class="nav-bar">
+			<a href="#">О нас</a>
+			<a href="#">Команда</a>
+			<a href="#">Маркет</a>
+			<a href="#">Контакты</a>
+		</nav>
+		<div class="header-buttons">
+			<a href="#buyblock" class="header-button a">
+				Обрести ангела
+			</a>
+			<a href="#voluntblock" class="header-button b">
+				Стать волонтером
+			</a>
+		</div>
+		<div class="languages">
+			<div class="ENG">ENG</div>
+			<div class="KAZ">ҚАЗ</div>
+		</div>
+	</div>
+</header>
+<div class="firstScreen">
+	<div class="firstScreen-img">
+		<img  src="img/firstScr.png">
+	</div>
+	
+	<div class="container">
+		<div class="firstScreen-text">
+			<div class="firstScreen-title">
+				ХОЧУ ПОМОЧЬ!
+			</div>
+			<div class="firstScreen-subtitle">
+				Мы вместе! Біз біргеміз! Ми разом!
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+
+
+<div class="donation-block">
+	<div class="container">
+		<div class="donation-block-title">
+			ЗАРЯЖЕННЫЕ ИЗМЕНИТЬ МИР
+		</div>
+		<div class="donation-block-subtitle">
+			Ваша помощь будет незаменимым толчком для процесса восстановления 
+школ в украине. Даже маленькая сумма может быть полезна!
+		</div>
+		<a href="#ex1" rel="modal:open" class="donate">
+			<img src="img/heart.png"> 
+			Пожертвовать
+		</a>
+	</div>
+</div>
+<div class="buy" id="buyblock">
+	<div class="buy-img">
+		<img src="img/buy.png">
+	</div>
+	
+	<div class="container">
+		<div class="buy-text">
+			<div class="buy-title">
+				Обрести ангела
+			</div>
+			<div class="buy-subtitle">
+				Вы можете пожертвовать любую сумму, и мы отправим вам Ангела.
+			</div>
+			<div class="buy-form">
+				<form id="form2">
+					<input type="text" id="fName" placeholder="Имя" name="fName" required>
+					<input type="text" id="sName" placeholder="Фамилия" name="sName" required>
+					<input placeholder="E-mail" type="email" id="email-1" name="email" required>
+					<input type="text" id="address" placeholder="Адрес доставки" name="address" required>
+				</form>
+			</div>
+			<button href="#ex1" rel="modal:open" type="submit" form="form2" value="Submit" class="send">
+				
+					Купить
+				
+				
+			</button>
+		</div>
+	</div>
+</div>
+<div class="volunteer" id="voluntblock">
+	<div class="container" id="volunt">
+		<div class="volunteer-title">
+			Стать волонтером проекта
+		</div>
+		<div class="volunteer-subtitle">
+			Чтобы присоединиться, нам нужна ваша контактная информация. Станьте частью нашей большой семьи!
+		</div>
+		<div class="volunteer-form">
+			<form id="form1">
+				<input type="text" id="fullname" placeholder="ФИО" name="fullname" required>
+				<input type="tel" id="phone" placeholder="Номер телефона" name="phone" pattern="[0-9]{1}[0-9]{3}[0-9]{3}[0-9]{4}" required>
+				<input placeholder="E-mail" type="email" id="email" name="email" required>
+			</form>
+		</div>
+		<button  onclick="volunt()" type="submit" form="form1" value="Submit" class="send">
+			Отправить
+		</button>
+	</div>
+</div>
+
+<div class="school">
+	<div class="container" id="install">
+		<div class="school-title">
+			Установить бокс с Ангелами Свободы в школе
+		</div>
+		<form id="form4" >
+			<input type="text" id="schname" placeholder="Название заведения" name="schname" required>
+			<input type="text" id="schaddress" placeholder="Адрес заведения" name="schaddress" required>
+			<input type="number" id="quantity" placeholder="Количество боксов" name="quantity">
+			<input placeholder="E-mail" type="email" id="email-1" name="email" required>
+			<input type="tel" id="phone" placeholder="Номер телефона" name="phone" pattern="[0-9]{1}[0-9]{3}[0-9]{3}[0-9]{4}" required>
+		</form>
+		<button  onclick="sent()" method="get"type="submit" form="form4" value="Submit" class="send">
+			Установить
+		</button>
+	</div>
+</div>
+<footer>
+	<div class="contacts">
+		<div class="contacts-title">
+			Связаться с нами
+		</div>
+		<div class="contacts-text">
+			+7 778 583 2122<br>
+			+7 701 558 8834<br>
+			info@helpukraine.kz
+		</div>
+		<div class="city">
+			г. Астана
+		</div>
+	</div>
+	<div class="credits">
+		<div class="copyright">
+			© Angels of Freedom
+		</div>
+	</div>
+</footer>
+<div id="ex1" class="modal" style="max-width: 970px;">
+	<div class="modal-content">
+		<div class="preview">
+			<div class="preview-img">
+				<img src="img/preview.png">
+			</div>
+			<div class="preview-text">
+				<div class="preview-title">
+					Помогите детям Украины
+				</div>
+				<div class="preview-subtitle">
+					Любое пожертвование может помочь восстановить школы разных регионов Украины.
+				</div>
+			</div>
+		</div>
+		<div class="modal-donation">
+			<div class="secured">
+				<img src="img/secured.png">Защищенный донат
+			</div>
+			<form id="form3">
+				<div class="tariffs">
+					<div class="one">
+						<input type="radio" id="one" value="one" name="follow" required>
+						<label for="one">Единичный</label>
+					</div>
+					<div class="many">
+						<input type="radio" id="many" value="many" name="follow" required>
+						<label for="many"><img src="img/heart.png"><div>Ежемесячный</div></label>
+					</div>
+				</div>
+				<div class="sum">
+					<label for="money">Сумма</label>
+					<input type="number" id="money" value="0" placeholder="Сумма денег" name="money" required>
+				</div>
+				<div class="stats">
+					<input type="text" id="fName1" placeholder="Имя" name="fName-1" required>
+					<input type="text" id="sName1" placeholder="Фамилия" name="sName-1" required>
+					<input placeholder="E-mail" type="email" id="email-2" name="email-2" required>
+				</div>
+				<a href="#ex2" rel="modal:open" class="donate" onclick="myFunction()">
+					<img src="img/heart.png"> 
+					Пожертвовать
+				</a>
+			</form>
+
+		</div>
+	</div>
+</div>
+
+<div id="ex2" class="modal" style="max-width: 970px;">
+	<div class="modal-content">
+		<div class="preview">
+			<div class="preview-img">
+				<img src="img/preview.png">
+			</div>
+			<div class="preview-text">
+				<div class="preview-title">
+					Помогите детям Украины
+				</div>
+				<div class="preview-subtitle">
+					Любое пожертвование может помочь восстановить школы разных регионов Украины.
+				</div>
+			</div>
+		</div>
+		<div class="modal-donation" id="don2">
+			<div class="modal-title">
+				Способы платежа
+			</div>
+			
+			<div id="confirmation" class="money-confirmation">
+				
+			</div>
+			<a href="#ex3" rel="modal:open" class="donate">
+				 Кредитная карта
+			</a>
+			
+
+		</div>
+	</div>
+</div>
+<div id="ex3" class="modal" style="max-width: 970px;">
+	<div class="modal-content">
+		<div class="preview">
+			<div class="preview-img">
+				<img src="img/preview.png">
+			</div>
+			<div class="preview-text">
+				<div class="preview-title">
+					Помогите детям Украины
+				</div>
+				<div class="preview-subtitle">
+					Любое пожертвование может помочь восстановить школы разных регионов Украины.
+				</div>
+			</div>
+		</div>
+		<div class="modal-donation" id="don2">
+			<div class="modal-title">
+				Кредитная карта
+			</div>
+			<div class="modal-content" id="credit">
+				<div class="security">
+					<img src="img/protection.png">
+					<div class="security-text">
+						Мы соблюдаем самые строгие отраслевые стандарты и никогда не храним информацию о вашей кредитной карте.
+					</div>
+				</div>
+				<form id="form5">
+					<input type="text" placeholder="Номер карты" name="credit-card" id="credit-card-input" maxlength=19 placeholder="0000 0000 0000 0000">
+					<input type="text" id="date" placeholder="MM/YY" pattern="[0-9]{2}/[0-9]{2}" maxlength=5 name="date">
+					<input type="text" placeholder="CVC" name="CVC" maxlength=3 id="CVC">
+				</form>
+			</div>
+			<a href="#ex4" rel="modal:open" class="donate">
+				 Подтвердить
+			</a>
+			
+
+		</div>
+	</div>
+</div>
+<div id="ex4" class="modal" style="max-width: 970px;">
+	<div class="modal-content">
+		<div class="preview">
+			<div class="preview-img">
+				<img src="img/preview.png">
+			</div>
+			<div class="preview-text">
+				<div class="preview-title">
+					Помогите детям Украины
+				</div>
+				<div class="preview-subtitle">
+					Любое пожертвование может помочь восстановить школы разных регионов Украины.
+				</div>
+			</div>
+		</div>
+		<div class="modal-donation">
+			<div class="modal-title">
+				Успешно
+			</div>
+			<div class="modal-content" id="success">
+				<div class="modal-content-title">
+					ОПЛАТА ПРОШЛА УСПЕШНО!
+				</div>
+				<div id="modal-content-mention" class="modal-content-mention">
+					
+				</div>
+				<div class="modal-content-text">
+					От имени фонда Ангелов Свобод, мы бы хотели выразить глубочайшую благодарность за ваше щедрое пожертвование. Ваша поддержка имеет решающее значение в наших усилиях по оказанию помощи школам, пострадавшим от продолжающегося конфликта в Украине.
+				</div>
+				<a rel="modal:close" class="donate">
+				 	Выйти
+				</a>
+			</div>
+
+		</div>
+	</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,606 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap');
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: #F2FFFC;
+	margin: 0;
+	padding: 0;
+}
+.container{
+	margin: 0 auto;
+	padding: 0 20px;
+	width: 100%;
+	max-width: 1180px;
+	
+}
+header{
+
+	font-weight: 600;
+	margin-top: 43px;
+}
+.nav-bar{
+	flex-basis: 1440px;
+	display: flex;
+	justify-content: space-between;
+}
+header .container{
+
+	line-height: 51px;
+	font-size: 24px;
+	font-family: 'Raleway';
+	display: flex;
+	justify-content: space-between;
+}
+.header-buttons{
+	margin: 0 25px;
+	display: flex;
+	justify-content: space-between;
+	column-gap: 16px;
+}
+.header-button{
+	height: 51px;
+	width: 266px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 25px;
+	text-align: center;
+	vertical-align: middle;
+	transition: 0.3s;
+}
+.header-button:hover{
+	width: 288px;
+	height: 60px;
+}
+.header-button.a{
+	background-color: #2158E4;
+	color: white;
+}
+.header-button.b{
+	background-color: #FFD706;
+	color: black;
+}
+.languages{
+	font-size: 20px;
+	gap: 0 20px;
+	display: flex;
+	justify-content: space-between;
+}
+header a{
+	color: black;
+	text-decoration: none;
+}
+#y{
+	position: absolute;
+	width: 100%;
+}
+.firstScreen{
+
+	width: 100%;
+	
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	font-family: 'Raleway';
+}
+.firstScreen-title{
+	text-align: right;
+	font-weight: 600;
+	font-size: 84px;
+}
+.firstScreen-subtitle{
+	text-align: right;
+	font-size: 36px;
+	font-weight: 600;
+}
+.firstScreen-img{
+
+	width: 100%;
+	margin-top: 43px;
+	z-index: -1;
+}
+.firstScreen .container{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.firstScreen-text{
+	
+}
+.donation-block{
+	text-align: center;
+	margin-top: 50px;
+	font-family: 'Raleway';
+}
+.donation-block .container{
+	
+	color: #222222;
+	background-color: #FFD706;
+	border-radius: 45px;
+}
+.donation-block-title{
+	padding-top: 50px;
+	margin-bottom: 30px;
+	font-weight: 600;
+	font-size: 48px;
+}
+.donation-block-subtitle{
+	font-weight: 600;
+	font-size: 24px;
+	margin: 0 auto 50px;
+	max-width: 880px;
+}
+.donate img{
+	padding-right: 15px;
+}
+.donate{
+	display: inline-flex;
+	align-items: center; 
+	padding-bottom: 50px;
+	border-color: #2158E4;
+	text-decoration: none;
+	border-radius: 15px;
+	padding: 10px 25px;
+	vertical-align: middle;
+	color: white;
+	background-color: #2158E4;
+	font-weight: 600;
+	font-size: 24px;
+	margin-bottom: 50px;
+	transition: 0.4s;
+}
+.donate:hover{
+	filter: brightness(1.25);
+}
+.volunteer{
+	margin-top: 70px;
+	font-family: 'Manrope';
+	background-color: #FFD706;
+	color: #222222;
+}
+.volunteer-title{
+	margin-bottom: 10px;
+	position: relative;
+	color: #2158E4;
+	padding-top: 37px;
+	font-weight: 700;
+	font-size: 35px;
+}
+.volunteer-title::before{
+	position: absolute;
+	content: '';
+	background-color: #2158E4;
+	left: -75px;
+	top: 70%;
+	width: 50px;
+	height: 3px;
+}
+.volunteer-subtitle{
+	font-weight: 500;
+	font-size: 24px;
+	max-width: 920px;
+}
+.volunteer-form{
+	margin: 33px 0 26px;
+}
+.send{
+	cursor: pointer;
+	padding: 12px 42px;
+	background-color: #2158E4;
+	color: white;
+	border-color: #2158E4;
+	border-radius: 10px;
+	font-size: 21px;
+	font-family: 'Manrope';
+	margin-bottom: 45px;
+	transition: 0.3s;
+}
+.send:hover{
+	filter: brightness(1.25);
+}
+.volunteer-form form{
+	display: flex;
+	flex-wrap: wrap;
+}
+.volunteer-form input{
+	margin-right: 25px;
+	margin-bottom: 15px;
+	width: 400px;
+	padding: 10px 15px;
+	font-family: 'Manrope';
+	font-size: 21px;
+}
+.volunteer-form input::placeholder{
+	font-family: 'Manrope';
+	color: #222222;
+	font-size: 21px;
+}
+.buy{
+	width: 100%;
+	font-family: 'Manrope';
+	margin-top: 60px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+
+}
+.buy .container{
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	display: flex;
+	justify-content: flex-end;
+
+	top: 0;
+}
+.buy-img{
+	width: 100%;
+}
+.buy-text{
+	max-width: 600px;
+}
+.buy-title{
+	position: relative;
+	font-weight: 600;
+	font-size: 35px;
+}
+.buy-title::before{
+	left: -75px;
+	top: -20%;
+	position: absolute;
+	content:url('../img/check.png');
+}
+.buy-subtitle{
+	margin-top: 15px;
+	font-weight: 600;
+	font-size: 24px;
+}
+#form2{
+	font-family: 'Manrope';
+}
+#form2{
+	margin: 34px 0 45px;
+	display: flex;
+	column-gap: 30px;
+	flex-wrap: wrap;
+}
+#form2 input{
+	font-size: 21px;
+	margin-bottom: 23px;
+	width: 280px;
+	border: 1px solid black;
+	border-radius: 20px;
+	padding: 10px 25px;
+}
+#form2 input::placeholder{
+	font-family: 'Manrope';
+	color: #222222;
+	font-size: 21px;
+}
+#ex1{
+	display: none;
+	column-gap: 45px;
+	background: none;
+	border: 0px;
+	padding: 0;
+}
+.modal-content{
+	font-family: 'Raleway';
+	width: 100%;
+	display: flex;
+	column-gap: 45px;
+}
+.preview{
+
+	width: 436px;
+	height: 624px;
+	border-radius: 40px;
+	font-family: 'Raleway';
+	background-color: white;
+}
+.preview-text{
+	padding: 30px;
+}
+.preview-title{
+	margin-bottom: 15px;
+	font-size: 30px;
+}
+.preview-subtitle{
+	font-size: 21px;
+}
+.modal-donation{
+
+	background-color: white;
+}
+.preview-img img{
+	width: 100%;
+}
+.modal-donation{
+	border-radius: 40px;
+	width: 534px;
+	height: 624px;
+	padding: 30px 42px;
+}
+.secured{
+	text-align: center;
+	font-weight: 500;
+	font-size: 30px;
+	margin-bottom: 40px;
+}
+#form3 label{
+	font-family: 'Raleway';
+	font-size: 21px;
+	font-weight: 500;
+	
+}
+#form3 input{
+	
+}
+#form3{
+	
+}
+.one{
+	margin-right: 40px;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+.many{
+	display: flex;
+	align-items: center;
+	color: white;
+	background-color: #2158E4;
+}
+.many label{
+	display: flex;
+	align-items: center;
+}
+.tariffs{
+	display: flex;
+	align-items: center;
+	border: 1px solid black;
+	border-radius: 20px;
+}
+.school{
+	margin: 60px 0;
+	font-family: Manrope;
+}
+.school-title{
+	position: relative;
+	font-weight: 600;
+	font-size: 35px;
+}
+.school-title::before{
+	left: -75px;
+	top: -20%;
+	position: absolute;
+	content:url('../img/check.png');
+}
+#form4{
+	margin: 34px 0 45px;
+	display: flex;
+	column-gap: 30px;
+	flex-wrap: wrap;
+}
+#form4 input{
+	font-size: 21px;
+	margin-bottom: 23px;
+	width: 280px;
+	border: 1px solid black;
+	border-radius: 20px;
+	padding: 10px 25px;
+}
+#form4 input::placeholder{
+	font-family: 'Manrope';
+	color: #222222;
+	font-size: 21px;
+}
+.contacts{
+	text-align: center;
+	font-family: Raleway;
+}
+.contacts-title{
+	font-weight: 700;
+	font-size: 42px;
+	margin-bottom: 25px;
+}
+.contacts-text{
+	font-size: 26px;
+	margin-bottom: 10px;
+}
+.city{
+	font-size: 18px;
+}
+.credits{
+	font-family: Raleway;
+
+	padding: 40px;
+	font-size: 20px;
+}
+.buy a{
+	text-decoration: none;
+	color: white;
+}
+
+#money{
+	font-family: Manrope;
+	font-size: 21px;
+	margin-bottom: 23px;
+	width: 100%;
+	border: 1px solid black;
+	border-radius: 20px;
+	padding: 10px 15px 10px 55px;
+}
+.sum label{
+	position: relative;
+	margin: 15px 0;
+}
+.sum label::before{
+	content: '₸';
+	position: absolute;
+	top: 210%;
+	left:20px;
+}
+#money::placeholder{
+	font-family: 'Manrope';
+	color: #222222;
+	font-size: 21px;
+}
+.sum{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+.stats{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+.stats input{
+
+	font-size: 21px;
+	margin-bottom: 23px;
+	width: 200px;
+	border: 1px solid black;
+	border-radius: 20px;
+	padding: 10px 25px;
+}
+.stats input::placeholder{
+	font-family: 'Manrope';
+	color: #222222;
+	font-size: 21px;
+}
+#email-2{
+	width: 100%;
+}
+#form3 .donate{
+	text-align: center;
+}
+
+.modal-title{
+	width: 100%;
+	padding-bottom: 25px;
+	font-size: 21px;
+	font-weight: 600;
+	position: relative;
+	text-align: center;
+	border-bottom: 1px solid black;
+}
+#ex2{
+	display: none;
+	column-gap: 45px;
+	background: none;
+	border: 0px;
+	padding: 0;
+}
+.modal-title::before{
+	position: absolute;
+	left: 10px;
+	top: 5%;
+	content: url(../img/Arrow.png);
+}
+
+.money-confirmation{
+	margin-top: 30px;
+	font-size: 40px;
+	text-align: center;
+	position: relative;
+}
+.money-confirmation::before{
+	content: "₸";
+	position: absolute;
+	top: 20%;
+	left:25%;
+	font-size: 30px;
+}
+.money-confirmation::after{
+	content: "KZT/мес";
+	position: absolute;
+	top:20%;
+	right: 17px;
+	font-size: 30px;
+}
+#don2{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.donate{
+	text-align: center;
+}
+#ex3{
+
+	display: none;
+	column-gap: 45px;
+	background: none;
+	border: 0px;
+	padding: 0;
+}
+.sent{
+	font-family: Manrope;
+	font-size: 21px;
+	border-radius: 20px;
+	width: 100%;
+	padding: 20px 0;
+	margin-bottom: 50px;
+	background-color: green;
+}
+.security{
+	display: flex;
+	justify-content: space-between;
+}
+.security-text{
+	width: 250px;
+	font-family: Manrope;
+	font-weight: 500;
+	font-size: 15px;
+}
+#form5{
+	margin:40px 15px;
+	padding: 25px 25px;
+	background-color: #F5F5F5;
+	border-radius: 25px;
+}
+#credit-card-input{
+	width: 100%;
+}
+#date, #CVC{
+	width: 45%;
+}
+#credit{
+	display: block;
+}
+#form5 input{
+	font-size: 21px;
+	margin-bottom: 23px;
+	border: 1px solid black;
+	border-radius: 20px;
+	padding: 10px 25px;
+}
+#form5 input::placeholder{
+	font-family: 'Manrope';
+	color: #222222;
+	font-size: 21px;
+}
+#success{
+	display: flex;
+	flex-direction: column;
+}
+.modal-content-title{
+	margin-top: 50px;
+	font-size: 35px;
+	margin-bottom: 40px 0;
+	font-weight: 500;
+}
+.modal-content-mention{
+	font-size: 18px;
+	margin:18px;
+}
+.modal-content-text{
+	margin-bottom: 40px;
+	font-weight: 500;
+	font-size: 18px;
+}
