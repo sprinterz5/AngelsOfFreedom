@@ -1,0 +1,681 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Source+Code+Pro:wght@300;400;500;600;700;800;900&display=swap');
+body{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	margin: 0 auto;
+	padding: 0 25px;
+	max-width: 1440px;
+}
+header ul{
+	align-items: center;
+	display: flex;
+	list-style: none;
+	margin: 35px 0 0 0;
+	padding: 0;
+}
+.logo{
+	font-family: "Source Code Pro";
+	background-color: black;
+	border-radius: 45px;
+	font-weight: 400;
+	font-size: 21px;
+	line-height: 25px;
+	padding: 10px 27.5px;
+	transition: 0.3s;
+}
+.logo:hover{
+	opacity: 0.8;
+}
+a.logo{
+	color: white;
+	text-decoration: none;
+}
+nav{
+	display: flex;
+	font-family: "Inter";
+	font-size: 18px;
+	font-weight: 500;
+}
+nav a{
+	padding-bottom:4px;
+	background-image: linear-gradient(#000 0 0);
+	background-position: 0 100%; /*OR bottom left*/
+	background-size: 0% 2px;
+	background-repeat: no-repeat;
+	transition:
+	    background-size 0.4s,
+	    background-position 0s 0.4s; /*change after the size immediately*/
+	color: black;
+	text-decoration: none;
+	margin-left: 52px;
+}
+nav a:hover{
+	background-position: 100% 100%; /*OR bottom right*/
+  	background-size: 100% 2px;
+}
+.header-img{
+	width: 55%;
+	z-index: -1;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.overview{
+	color: #131313;
+	font-family: "Inter";
+	letter-spacing: 0.025em;
+	margin-bottom: 400px;
+}
+.overview-subtitle{
+	margin-top: 10%;
+	font-weight: 500;
+	font-size: 21px;
+}
+.overview-title{
+	margin-top: 12px;
+	line-height: 77px;
+	font-size: 64px;
+	font-weight: 700;
+	max-width: 800px;
+	margin-bottom: 60px;
+}
+.overview-button{
+	
+	color: white;
+	text-decoration: none;
+	background-color: #131313;
+	border-radius: 25px;
+	padding: 18px 40px;
+	font-size: 21px;
+	font-weight: 400;
+	transition: 0.3s;
+}
+.overview-button:hover{
+	opacity: 0.9;
+}
+.description-title{
+	max-width: 550px;
+	font-family: "Source Code Pro";
+	font-size: 32px;
+	font-weight: 600;
+}
+.description-subtitle{
+	max-width: 780px;
+	font-family: Inter;
+	line-height: 33px;
+	font-size: 24px;
+	letter-spacing: 0.03em;
+}
+.description-upper{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.description-cards{
+	margin-top: 111px;
+	flex-wrap: wrap;
+	row-gap: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+.description-card{
+	max-width: 353px;
+
+}
+.description-card-number{
+	font-family: "Source Code Pro";
+	font-size: 32px;
+	font-weight: 600;
+	width: 50px;
+	vertical-align: middle;
+	text-align: center;
+	height: 50px;
+	background-color: #131313;
+	border-radius: 25px;
+	line-height: 50px;
+	color: white;
+}
+.description-card-title{
+	font-size: 32px;
+	font-family: "Source Code Pro";
+	font-weight: 600;
+	margin: 16px 0 10px;
+}
+.description-card-subtitle{
+	font-family: Inter;
+	font-size: 24px;
+	line-height: 31px;
+}
+.guide{
+	margin-top: 200px;
+	margin-bottom: 140px;
+}
+.guide-upper{
+	font-family: "Source Code Pro";
+	font-weight: 600;
+	text-align: center;
+}
+.guide-subtitle{
+	color: #444444;
+	margin-bottom: 5px;
+	font-size: 24px;
+}
+.guide-title{
+	font-size: 32px;
+	margin-bottom: 40px;
+}
+.video{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 48.6%;
+	height: 40vh;
+	border-radius: 25px;
+	background-color: #D9D9D9;
+}
+.youtube-icon{
+	position: absolute;
+}
+.guide-lower{
+
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.guide-slider{
+	margin-top: 6%;
+}
+.guide-slide{
+	max-width: 680px;
+}
+.slider-buttons{
+	display: flex;
+
+}
+.slide-button{
+	cursor: pointer;
+	position: relative;
+	max-width: 160px;
+	margin-right: 25px;
+	width: 100%;
+	line-height: 40px;
+	font-family: Inter;
+	color: #D9D9D9;
+	font-weight: 600;
+	font-size: 32px;
+}
+.slide-button.clicked{
+	color: #131313;
+}
+.slide-button.clicked::after{
+	background-color: #131313;
+}
+.slide-button::after{
+	content:"";
+	position: absolute;
+	width: 160px;
+	bottom: -10px;
+	left: 0;
+	border-radius: 25px;
+	background-color: #D9D9D9;
+	height: 5px;
+}
+.guide-slide-title{
+	color: #131313;
+	margin: 30px 0 10px;
+	font-family: Inter;
+	font-size: 32px;
+	font-weight: 600;
+}
+.guide-slide-subtitle{
+	font-family: Inter;
+	font-size: 24px;
+}
+.creator-upper{
+	line-height: 40px;
+	display: flex;
+	color: #131313;
+	margin-bottom: 40px;
+}
+.creator-title{
+	font-family: "Source Code Pro";
+	font-size: 32px;
+
+	font-weight: 600;
+}
+.creator-subtitle{
+	font-family: Inter;
+	font-size: 24px;
+	font-weight: 400;
+	margin-left: 100px;
+}
+.team{
+	text-align: center;
+}
+.team-title{
+	color: #444444;
+	font-family: "Source Code Pro";
+	font-weight: 600;
+	font-size: 21px;
+}
+.team-subtitle{
+	margin: 5px 0 50px;
+	font-family: "Source Code Pro";
+	font-weight: 600;
+	font-size: 32px;
+}
+.team-cards{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.team-card{
+	width: 23,611111%;
+}
+.team-card-title{
+	margin: 25px 0 10px;
+	font-family: "Source Code Pro";
+	font-weight: 600;
+	font-size: 24px;
+}
+.team-card-subtitle{
+	font-family: "Inter";
+	font-size: 18px;
+}
+.contacts{
+	background-color: #131313;
+	padding-bottom: 80px;
+}
+.contacts-title{
+	font-family: Inter;
+	font-weight: 600;
+	font-size: 32px;
+	padding: 70px 0 15px;
+	color: white;
+	margin-top: 200px;
+}
+.contacts-subtitle{
+	padding-bottom: 50px;
+	font-size: 24px;
+	color: #F2F2F2;
+	font-family: Inter;
+}
+.contacts-buttons{
+	font-family: "Source Code Pro";
+	font-size: 24px;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+}
+.contacts-button{
+	width: 34.72%;
+	border-radius: 35px;
+	height: 70px;
+	display: flex;
+	background-color: white;
+	align-items: center;
+	margin-right: 80px;
+}
+.contacts-buttons a{
+	color: #131313;
+	text-decoration: none;
+}
+.contacts-button img{
+	margin: 0 25px 0 33px;
+}
+.footer-card{
+	width: 25%;
+}
+.footer-card-title{
+	font-size: 24px;
+	font-weight: 600;
+	color:#131313;
+	margin-top: 60px;
+	margin-bottom: 30px;
+}
+.footer-upper .container{
+	color: #444444;
+	font-size: 18px;
+	font-family: "Source Code Pro";
+	display: flex;
+	margin-bottom: 80px;
+}
+
+.footer-card-link{
+	margin-bottom: 20px;
+}
+.footer-card-link a{
+	color: #444444;
+	text-decoration: none;
+}
+.footer-lower{
+	border-top: 1px solid #787878;
+	color: #131313;
+	font-family: Inter;
+	height: 100px;
+	font-size: 13px;
+	display: flex;
+	align-items: center;
+}
+.footer-lower .container{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.social-media a{
+ 	margin-left: 55px;
+}
+.creator-specifications{
+	display: flex;
+	flex-wrap: wrap;
+}
+.creator-specifications label{
+	font-size: 21px;
+	font-family: Inter;
+	font-weight: 500;
+}
+.creator-preferences{
+	margin-right: 70px;
+	position: relative;
+}
+.creator-preferences, .creator-diet{
+	display: flex;
+	flex-direction: column;
+}
+.creator-preferences select, .creator-diet select{
+	margin-top: 20px;
+	background-image:
+    url("../img/arrow.png");
+    font-family: Inter;
+    background-position: 90%;
+    background-size: 25px 15px;
+  	background-repeat: no-repeat;
+  	font-size: 18px;
+  	font-weight: 500;
+  	color: #CECECE;
+  	border: 2px solid #CECECE;
+  	appearance: none;
+	width: 352px;
+	border-radius: 25px;
+	padding-left:  40px;
+	height: 50px;
+}
+.creator-preferences select:focus, .creator-diet select:focus{
+	color: #131313;
+	border: 2px solid #131313;
+	background-image:
+    url("../img/arrowup.png");
+}	
+.creator{
+	margin-bottom: 150px;
+}
+.creator-specifications option{
+
+}
+.preferences-button{
+	font-family: Inter;
+	font-size: 40px;
+	color: #CECECE;
+	cursor:pointer;
+	align-self:center;
+	transition: 0.2s;
+}
+.preferences-button:active{
+	color: #131313;
+}
+#preference-c{
+	position: absolute;
+	bottom: 50px;
+	right: -25px;
+}
+#creator-form{
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: space-between;
+}
+.creator-calculator{
+
+	font-size: 21px;
+	font-weight: 500;
+	font-family: Inter;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	row-gap: 20px;
+	width: 40.625%;
+}
+.creator-calculator-item{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 270px;
+
+}
+.creator-calculator-item input, .creator-calculator-item select{
+	appearance: none;
+	padding: 0 20px;
+	font-family: Inter;
+	margin-top: 20px;
+	font-size: 18px;
+  	font-weight: 500;
+  	color: #CECECE;
+  	border: 2px solid #CECECE;
+
+  	height: 50px;
+  	border-radius: 25px;
+}
+.creator-calculator-item select{
+	background-image:
+    url("../img/arrow.png");
+    background-position: 90%;
+    background-size: 25px 15px;
+  	background-repeat: no-repeat;
+}
+.creator-calculator-item select:focus{
+	background-image: url("../img/arrowup.png");
+	color: #131313;
+	border: 2px solid #131313;
+}
+.creator-calculator-item input:focus{
+  	font-weight: 500;
+  	color: #131313;
+  	border: 2px solid #131313;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#divage::after{
+	position: absolute;
+	content:'лет';
+	right: 10%;
+	top: 60px;
+	color: #CECECE;
+}
+#divheight::after{
+	position: absolute;
+	content:'см';
+	right: 10%;
+	top: 60px;
+	color: #CECECE;
+}
+#divweight::after{
+	position: absolute;
+	content:'кг';
+	right: 10%;
+	top: 60px;
+	color: #CECECE;
+}
+.creator-button{
+	height: 30px;
+	line-height: 30px;
+
+	font-weight: 500;
+	font-size: 21px;
+	font-family: Inter;
+	padding: 20px 250px;
+	background-color: #131313;
+	color: white;
+	border-radius: 25px;
+
+}
+a.creator-button {
+	text-decoration: none;
+}
+.button-outer{
+	margin-top: 40px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+#nextHeader{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.search{
+	position: relative;
+	margin-top: 35px;
+}
+.search input{
+
+	background-color: #EEEEEE;
+	border-color: transparent;
+	padding: 12px 0 12px 60px;
+	font-family: Inter;
+	font-size: 18px;
+	color: #5F6368;
+	border-radius: 25px;
+}
+.search::before{
+	position: absolute;
+	top: 25%;
+	left: 20px;
+	content: url("../img/search.png");
+}
+.today-title{
+	font-family: "Source Code Pro";
+	margin: 35px 0;
+	font-weight: 500;
+	font-size: 27px;
+}
+.today-cards{
+	display: flex;
+	justify-content: space-between;
+}
+.today-card{
+	border-radius: 50px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.today-card img{
+	border-top-left-radius: 45px;
+	border-top-right-radius: 45px;
+	margin-bottom: 16px;
+}
+.today-card{
+	color: black;
+	text-decoration: none;
+	font-family: "Source Code Pro";
+	padding-bottom: 23px;
+	font-weight: 500;
+	font-size: 24px;
+	box-shadow: 0px 5px 10px black;
+}
+.plan{
+	font-family: "Source Code Pro";
+	
+	margin-top: 100px;
+}
+.days{
+	display: flex;
+	justify-content: space-between;
+}
+.plan-title{
+	font-weight: 500;
+	font-size: 27px;
+}
+.day{
+	margin-top: 35px;
+}
+.day-title{
+	font-weight: 500;
+	font-size: 24px;
+	margin-bottom: 16px;
+}
+.meal-title{
+	font-weight: 500;
+	font-size: 20px;
+}
+a.meal{
+	color: black;
+	text-decoration: none;
+}
+.today-cards img{
+	width: 400px;
+	height: 268px;
+object-fit: cover;
+}
+.modal-img img{
+	border-radius: 45px;
+	width: 500px;
+	height: 375px;
+	object-fit: cover;
+}
+.modal{
+	font-family: "Source Code Pro";
+	min-width: 80%;
+}
+.modal-title{
+	margin-top: 20px;
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+.modal-content{
+	display: flex;
+	column-gap: 30px;
+}
+.modal-subtitle{
+	font-size: 28px;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+.ingridients-title, .instructions-title, .macronutrients-title{
+	margin-top: 10px;
+	font-size: 24px;
+	font-weight: 500;
+}
+.ingridients-text, .instructions-text, .macronutrients-text{
+	font-size: 19px;
+}
+#search{
+	position: relative;
+}
+.result{
+	left: 0;
+	top: 50px;
+	padding: 10px;
+	display: flex;
+}
+.result-image img{
+	height: 100px;
+	margin-right: 10px;
+}
+a.result{
+	text-decoration: none;
+	font-family: Inter;
+	color: black;
+}
+.result-title{
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.result-subtitle{
+	font-size: 14px;
+}
